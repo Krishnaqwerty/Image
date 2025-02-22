@@ -1,38 +1,105 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: top;
+}
+
+.App-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.App-footer {
+  margin-top: 20px;
+  
+  background: #a8bacd;
   color: white;
+  width: 100%;
+  text-align: center;
+  justify-content: end;
 }
 
-.App-link {
-  color: #61dafb;
+.camera-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Camera section */
+.camera-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Webcam preview */
+.camera-preview {
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+}
+
+/* Filtered canvas */
+.filtered-canvas {
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+}
+
+/* Buttons */
+button {
+  margin: 10px;
+  padding: 10px 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Filters */
+.filters-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  background: #f4f4f4;
+  border-radius: 10px;
+}
+
+.filters-section h3 {
+  margin-bottom: 10px;
+}
+
+/* Filter buttons */
+.filters-section button {
+  background: #444;
+  color: white;
+  width: 120px;
+}
+
+.filters-section button:hover {
+  background: #222;
 }

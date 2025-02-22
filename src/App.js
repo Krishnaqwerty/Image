@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Image from './ImageProcess';
+import Header from './Header';
+import Camera from './Camera';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Header />
       </header>
+
+      <div className="App-body">
+        <Camera />
+        <Image />
+      </div>
+
+      <div className="App-footer">
+        <p>Image Processing App</p>
+      </div>
+      
+      
     </div>
   );
 }
