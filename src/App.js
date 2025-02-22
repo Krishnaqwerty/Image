@@ -12,11 +12,11 @@ function App() {
 
       <div className="App-body">
         <Camera />
-        <Image />
+        
       </div>
 
       <div className="App-footer">
-        <p>Image Processing App</p>
+      <Image />
       </div>
       
       
